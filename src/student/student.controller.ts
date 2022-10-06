@@ -14,7 +14,7 @@ export class StudentController {
 
   @Get()
   findAll() {
-    return this.studentService.findAll();
+    return this.studentService.findCourse(1);
   }
 
   @Get(':id')

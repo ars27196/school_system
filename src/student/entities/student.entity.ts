@@ -15,6 +15,6 @@ export class Student {
     @Column()
     studentSemester: string
 
-    @OneToMany(()=>StudentCourse, (stu_cors: StudentCourse)=>stu_cors.)
+    @OneToMany(()=>StudentCourse, (stu_cors: StudentCourse)=>stu_cors.studentId)
     course:StudentCourse
 }
